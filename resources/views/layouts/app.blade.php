@@ -9,7 +9,7 @@
         @yield('title')
     </h1>
 
-    <dvi>
+    <div>
         @if(session()->has('success'))
             <div>
                 {{ session('success') }}
@@ -17,7 +17,7 @@
         @endif
 
         @yield('content')
-    </dvi>
+    </div>
 
 
 </body>
