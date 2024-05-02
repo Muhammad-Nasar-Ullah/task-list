@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
-
+    @yield('style')
 </head>
 
 <body>
@@ -10,6 +10,12 @@
     </h1>
 
     <dvi>
+        @if(session()->has('success'))
+            <div>
+                {{ session('success') }}
+            </div>
+        @endif
+
         @yield('content')
     </dvi>
 
